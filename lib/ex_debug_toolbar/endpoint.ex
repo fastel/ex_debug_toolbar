@@ -3,7 +3,8 @@ defmodule ExDebugToolbar.Endpoint do
 
   use Phoenix.Endpoint, otp_app: :ex_debug_toolbar
 
-  socket "/socket", ExDebugToolbar.UserSocket
+  socket "/socket", ExDebugToolbar.UserSocket,
+      websocket: true #(comment this for Phoenix 1.3)
 
   # Serve at "/" the static files from "priv/static" directory.
   #
