@@ -8,7 +8,7 @@ defmodule ExDebugToolbar.UserSocket do
   channel "breakpoint:*", ExDebugToolbar.BreakpointChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
+  # transport :websocket, Phoenix.Transports.WebSocket, (uncomment for Phoenix 1.3)
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can
